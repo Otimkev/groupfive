@@ -23,7 +23,7 @@ app.use('/api/auth/',authRoute)
 app.use('/api/user/',userRoute)
 
 
-PORT = process.env.PORT || 2002;
+PORT = process.env.PORT || 2003;
 
 app.listen(PORT,()=>{
  console.log(`listening on port ${PORT}`)
