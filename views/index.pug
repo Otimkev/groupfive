@@ -1,0 +1,19 @@
+extend main
+
+block navigation
+      ul.nav.navbar-nav.navbar-left(style='margin-left:85%')
+        li.nav-item.dropdown
+          a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+           img(src="/static/img/more.png" alt='...',style='background-color:white')
+           .dropdown-menu(aria-labelledby='navbarDropdown')
+              a.dropdown-item(href='/api/user/sales_reg') Contact
+              a.dropdown-item(href='/api/user/supervisor_reg') FAQ
+              a.dropdown-item(href='/api/user/signin') Home
+              
+block content
+ .row.text-black
+  .col-xl-5.col-lg-6.col-md-4.col-sm-12.mx-auto.text-center.form
+   .px-2(style='margin-top:12%')
+    h2 Congratulations!
+
+
